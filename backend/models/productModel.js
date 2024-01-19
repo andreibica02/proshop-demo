@@ -3,7 +3,7 @@ import mongoose from "mongoose";
 const reviewSchema = mongoose.Schema(
   {
     user: {
-      type: moongoose.Schema.Types.ObjectId,
+      type: mongoose.Schema.Types.ObjectId,
       reqierd: true,
       ref: "User",
     },
@@ -28,7 +28,7 @@ const reviewSchema = mongoose.Schema(
 const prodctSchema = new mongoose.Schema(
   {
     user: {
-      type: moongoose.Schema.Types.ObjectId,
+      type: mongoose.Schema.Types.ObjectId,
       reqierd: true,
       ref: "User",
     },
