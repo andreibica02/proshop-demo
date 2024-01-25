@@ -101,7 +101,9 @@ const CartScreen = () => {
                 className="btn-block"
                 disabled={cartItems.length === 0}
               >
-                Proceed To Checkout
+                <Link to={"/checkout"}>
+                  <h10 style={{ color: "white" }}>Proceed To Checkout</h10>
+                </Link>
               </Button>
             </ListGroup.Item>
           </ListGroup>
