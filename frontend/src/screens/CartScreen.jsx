@@ -30,6 +30,9 @@ const CartScreen = () => {
   const removeFromCartHandler = async (id) => {
     dispatch(removeFromCart(id));
   };
+  const checkoutHandler = () => {
+    navigate(`/login?redirect=/shipping`);
+  };
 
   return (
     <Row>
@@ -100,6 +103,7 @@ const CartScreen = () => {
                 type="button"
                 className="btn-block"
                 disabled={cartItems.length === 0}
+                onClick={checkoutHandler}
               >
                 <Link to={"/checkout"}>
                   <h10 style={{ color: "white" }}>Proceed To Checkout</h10>
